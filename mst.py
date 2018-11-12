@@ -21,8 +21,8 @@ def prim(r_matrix):
                 r_matrix_copy[j][next_v_col]=1
                 r_matrix_copy[next_v_col][j]=1
         is_used[0][next_v_col]=1  
-    kong = np.zeros((r_matrix.shape[0],r_matrix.shape[0]))
-    kong[np.where(rs)]=r_matrix[np.where(rs)]
-    final_r_matrix = kong
+#    kong = np.zeros((r_matrix.shape[0],r_matrix.shape[0]))
+#    kong[np.where(rs)]=r_matrix[np.where(rs)]
+#    final_r_matrix = kong
 #    return final_r_matrix #返回最终带有权重的最小生成树
     return binary_matrix#二值矩阵，不带有权重
